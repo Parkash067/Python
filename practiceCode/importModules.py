@@ -1,22 +1,22 @@
-# Step#1  Basic Calculator
+#Step#1  Basic Calculator
 # import mathsFun as _maths
 # active = True
 # while active:
-#     number1 = raw_input("Enter first number: ")
-#     number2 = raw_input("Enter second number: ")
-#     operation = raw_input("Apply operations + / * - on numbers")
+#     number1 = input("Enter first number: ")
+#     number2 = input("Enter second number: ")
+#     operation = input("Apply operations + / * - on numbers")
 #     if operation == "+":
 #         add = _maths.add(int(number1),int(number2))
-#         print ("Result is %s"%add)
+#         print ("Result is %d"%add)
 #     elif operation == "-":
 #         diff = _maths.diff(int(number1),int(number2))
-#         print ("Result is %s"%diff)
+#         print ("Result is %d"%diff)
 #     elif operation == "*":
 #         prod = _maths.prod(int(number1),int(number2))
-#         print ("Result is %s" % prod)
+#         print ("Result is %d" % prod)
 #     elif operation == "/":
 #         div = _maths.divide(int(number1), int(number2))
-#         print ("Result is %s" % div)
+#         print ("Result is %d" % div)
 #     else:
 #         active = False
 #         print ("You entered invalid operation on number")
@@ -49,9 +49,9 @@
 #
 # active = True
 # while active:
-#     album = raw_input("Enter name of album: ")
-#     artist = raw_input("Enter name of artist: ")
-#     show = raw_input("Do you want to show the album info? y or n")
+#     album = input("Enter name of album: ")
+#     artist = input("Enter name of artist: ")
+#     show = input("Do you want to show the album info? y or n")
 #     if show == 'y':
 #         result = album_info(album,artist)
 #         print ("This album '%s' is created by %s"%(result["album"], result["artist"]))

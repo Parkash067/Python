@@ -41,12 +41,25 @@ class point():
         self.x=x
         self.y=y
         """Initialize attributes of the parent class."""
+
 class shape():
     def __init__(self,area):
         self.area=area
+
     def draw(self):
         print("Drwaing")
-class rectangle():
-    def __init__(self,top_left,bottom_right):
+
+class rectangle(shape):
+    def __init__(self,top_left,bottom_right,area):
+        super().__init__(area)
         self.top_left=top_left
-        self.bo
+        self.bottom=bottom_right
+
+    def draw(self):
+        print("Drawing Rectangle")
+
+draw_rect = rectangle(4,5,20)
+draw_rect.draw()
+
+#ISA  parent child ISA relation
+#HasA composition has a relation 
